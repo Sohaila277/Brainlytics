@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainlytics</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="grad2.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand"><i class="fas fa-brain"></i> Brainlytics </a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link" data-page="home"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-page="classifier"><i class="fas fa-microscope"></i> Classifier</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-page="about"><i class="fas fa-info-circle"></i> About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <h1><i class="fas fa-brain"></i> Brain Tumor Detection System</h1>
+            <p>Welcome to our Brain Tumor Detection System. This platform uses advanced artificial intelligence to analyze medical images and detect potential brain tumors with high accuracy.</p>
+            
+            <h2><i class="fas fa-exclamation-triangle"></i> Symptoms Guidance</h2>
+            <h3>Common Symptoms:</h3>
+            <ul class="symptoms-list">
+                <li><i class="fas fa-head-side-virus"></i> Persistent headaches that worsen over time</li>
+                <li><i class="fas fa-head-side-cough"></i> Unexplained nausea or vomiting</li>
+                <li><i class="fas fa-eye"></i> Vision problems (blurred or double vision)</li>
+                <li><i class="fas fa-brain"></i> Seizures (especially with no prior history)</li>
+                <li><i class="fas fa-walking"></i> Balance or coordination difficulties</li>
+                <li><i class="fas fa-comment-medical"></i> Speech or hearing problems</li>
+                <li><i class="fas fa-user"></i> Personality or behavior changes</li>
+            </ul>
+            
+            <h3>When to Seek Immediate Help:</h3>
+            <ul class="warning-list">
+                <li><i class="fas fa-ambulance"></i> Sudden onset of severe symptoms</li>
+                <li><i class="fas fa-arrow-up"></i> Symptoms that progressively worsen</li>
+                <li><i class="fas fa-bolt"></i> Combination of neurological symptoms (e.g. headache + weakness)</li>
+                <li><i class="fas fa-exclamation"></i> Seizures in someone with no epilepsy history</li>
+            </ul>
+            
+            <h2><i class="fas fa-medkit"></i> Treatment Methods</h2>
+            <ul class="treatment-list">
+                <li><i class="fas fa-scalpel"></i> <strong>Surgery:</strong> Tumor removal when accessible</li>
+                <li><i class="fas fa-radiation"></i> <strong>Radiation therapy:</strong> Targeted high-energy beams</li>
+                <li><i class="fas fa-pills"></i> <strong>Chemotherapy:</strong> Anti-cancer drugs</li>
+                <li><i class="fas fa-bullseye"></i> <strong>Targeted therapy:</strong> Drugs targeting specific tumor features</li>
+                <li><i class="fas fa-shield-virus"></i> <strong>Immunotherapy:</strong> Boosting the immune system</li>
+                <li><i class="fas fa-hands-helping"></i> <strong>Supportive care:</strong> Managing symptoms and side effects</li>
+            </ul>
+            
+            <h2><i class="fas fa-hands-helping"></i> Patient Support</h2>
+            <ul class="support-list">
+                <li><i class="fas fa-users"></i> Join brain tumor support groups (online or local)</li>
+                <li><i class="fas fa-book-medical"></i> Maintain a symptom diary for doctor visits</li>
+                <li><i class="fas fa-flask"></i> Ask about clinical trial opportunities</li>
+                <li><i class="fas fa-heart"></i> Prioritize mental health with counseling if needed</li>
+                <li><i class="fas fa-hands"></i> For caregivers: Practice active listening and patience</li>
+            </ul>
+        </div>
+
+        <!-- Classifier Page -->
+        <div id="classifier" class="page">
+            <h1><i class="fas fa-microscope"></i> Image Classifier</h1>
+            <p>Upload an MRI scan of the brain to classify whether a tumor is present or not. Simply drag and drop your image file into the area below or click to select a file.</p>
+            
+            <div class="upload-container">
+                <div id="drop-area" class="drop-area">
+                    <p><i class="fas fa-cloud-upload-alt"></i> Drag & Drop your MRI image here</p>
+                    <p>or</p>
+                    <input type="file" id="fileInput" accept="image/*">
+                    <label for="fileInput" class="btn"><i class="fas fa-folder-open"></i> Select File</label>
+                </div>
+                <div id="preview-container" class="preview-container">
+                    <img id="image-preview" class="hidden">
+                    <div id="result" class="result hidden">
+                        <h3><i class="fas fa-clipboard-check"></i> Classification Result:</h3>
+                        <p id="result-text"></p>
+                        <p id="confidence"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <h1><i class="fas fa-info-circle"></i> About This Project</h1>
+            <p>This Brain Tumor Detection System was developed using deep learning techniques to analyze medical imaging data. The model was trained on a dataset of MRI scans from:</p>
+            
+            <a href="https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection" target="_blank" class="dataset-link">
+                <i class="fab fa-kaggle"></i> Kaggle Brain MRI Dataset for Tumor Detection
+            </a>
+            
+            <p>The system is intended for research and educational purposes and should not be used as a sole diagnostic tool without consultation with medical professionals.</p>
+            
+            <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+            <div class="contact-info">
+                <a href="mailto:your.email@example.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> your.email@example.com
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i> GitHub Profile
+                </a>
+                <a href="tel:+1234567890" class="contact-link">
+                    <i class="fas fa-phone"></i> +123 456 7890
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="grad2.js"></script>
+</body>
+</html>

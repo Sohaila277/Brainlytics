@@ -1,0 +1,6 @@
+flask==2.3.2             # Web framework for backend API
+flask-cors==4.0.0        # Enable CORS for frontend-backend communication
+gunicorn==20.1.0         # Production server for Flask (required for Render/Heroku)
+tensorflow-cpu==2.10.0   # Lightweight TensorFlow (no GPU support, smaller install)
+pillow==10.0.0           # Image processing (MRI uploads)
+numpy==1.24.3            # Array handling for model input
