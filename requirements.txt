@@ -5,3 +5,4 @@ tensorflow-cpu>=2.16.1  # Use latest stable version
 pillow==10.0.0           # Image processing (MRI uploads)
 numpy==1.24.3            # Array handling for model input
 setuptools>=68.0.0  # Replaces distutils functionality
+wheel>=0.40.0
